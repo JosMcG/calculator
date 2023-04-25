@@ -1,0 +1,7 @@
+#display {
+    width: 210px;
+    height: 25px;
+    padding: 5px;
+    background-color: lightgray;
+    text-align: right;
+}
