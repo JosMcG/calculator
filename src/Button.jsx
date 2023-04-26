@@ -33,8 +33,15 @@ const Button = (props) => {
         return props.setDisplay("")
       }
       if (thisEntry === "=") {
-        props.setNums("")
-        return props.setDisplay(evaluate(current));
+        try {
+          return props.setDisplay(evaluate(current))
+        }
+        catch(error){
+          return;
+        }
+        finally{
+          props.setNums("")
+        }
       }
       props.setDisplay(current + thisEntry);
     }
