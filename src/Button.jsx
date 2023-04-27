@@ -47,11 +47,14 @@ const Button = (props) => {
     }
       
     return(
-      <button id={props.obj.id}
-              number={props.obj.value}
-              action={props.obj.action}
-              onClick={handleClick}>{props.obj.value}
-      </button>
+      <div>
+        <button className="buttons"
+                id={props.obj.id}
+                number={props.obj.value}
+                action={props.obj.action}
+                onClick={handleClick}>{props.obj.value}
+        </button>
+      </div>
     );
   }
 

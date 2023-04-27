@@ -1,6 +1,6 @@
-import "./OperatorButtons.css"
 import {Clear} from "./KeyObjects"
 import Button from "./Button"
+import "./ClearButton.css"
 
 function ClearButton(props) {
     return(

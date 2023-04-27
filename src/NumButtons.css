@@ -1,12 +1,10 @@
 
-NumButtons {
-  background-color: lightgray;
+.num-pad-buttons {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 
+    repeat(3, 1fr);
+  margin: 5px;
 }
- #zero {
-  width: 65%;
- }
 
- #decimal {
-  width: 30%;
-  margin-left: 4px;
- }
+

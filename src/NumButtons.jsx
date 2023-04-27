@@ -13,7 +13,7 @@ function NumButtons(props) {
                                                    />);
 
     return (
-      <div className="buttons">
+      <div className="num-pad-buttons">
          {numPadButtons}
       </div>
     )
