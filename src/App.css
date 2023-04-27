@@ -41,20 +41,29 @@
   color: #888;
 }*/
 
-/*#nums-deci {
-
+.app {
+  background-color: gray;
 }
-DecimalButton {
-  
-}*/
 
 #ops {
   display: flex;
   flex-direction: column;
 }
 
-#num-ops {
+#nums-deci {
   display: grid;
-  grid-template-columns: 165px 50px;
+  grid-template-columns: 165px;
 }
 
+#clear-nums {
+  display: flex;
+  flex-direction: column;
+}
+
+#clear {
+  width: 50%;
+}
+
+#all-buttons {
+  display: flex;
+}

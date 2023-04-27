@@ -24,10 +24,6 @@ export const NumsObj = [
     ];
 
 export const OpsObj = [
-  {action: "AC",
-  value: "AC",
-  id: "clear"},
-
   {action: "*",
     value: "*",
     id: "multiply"},
@@ -44,3 +40,9 @@ export const OpsObj = [
     value: "=",
     id: "equals"}
 ];
+
+export const Clear = [{
+  action: "AC",
+  value: "AC",
+  id: "clear"
+}]

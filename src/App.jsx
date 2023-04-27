@@ -3,6 +3,7 @@ import './App.css'
 import Display from "./Display"
 import NumButtons from "./NumButtons"
 import OperatorButtons from "./OperatorButtons"
+import ClearButton from "./ClearButton"
 
 
 function App() {
@@ -10,18 +11,20 @@ function App() {
   const [nums, setNums] = useState("");
 
   return (
-    <div className="App">
+    <div className="app">
       <Display display={display}/>
-      <div id="num-ops">
-        <div id="nums-deci">
-          <NumButtons setDisplay={setDisplay} display={display} 
-                      nums={nums} setNums={setNums}
-          />
+      <div id="all-buttons">
+        <div id="clear-nums">
+          <ClearButton setDisplay={setDisplay} display={display} 
+                      nums={nums} setNums={setNums}/>
+          <div id="nums-deci">
+            <NumButtons setDisplay={setDisplay} display={display} 
+                        nums={nums} setNums={setNums}/>
+          </div>
         </div>
         <div id="ops">
           <OperatorButtons setDisplay={setDisplay} display={display}
-                           nums={nums} setNums={setNums}
-          />
+                          nums={nums} setNums={setNums}/>
         </div>
       </div>
     </div>

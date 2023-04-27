@@ -1,7 +1,12 @@
-#num-button {
-    background-color: gray;
-  }
 
-  #decimal {
-    background-color: gray;
+NumButtons {
+  background-color: lightgray;
 }
+ #zero {
+  width: 65%;
+ }
+
+ #decimal {
+  width: 30%;
+  margin-left: 4px;
+ }
