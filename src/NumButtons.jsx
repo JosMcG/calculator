@@ -5,6 +5,7 @@ import {NumsObj} from "./KeyObjects"
 function NumButtons(props) {
 
     const numPadButtons = NumsObj.map(n => <Button obj={n}
+                                                   id={n.id}
                                                    key={n.value}
                                                    setDisplay={props.setDisplay} 
                                                    display={props.display} 

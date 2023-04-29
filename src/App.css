@@ -40,12 +40,49 @@
 .read-the-docs {
   color: #888;
 }*/
-
+#root {
+  margin: auto;
+}
 .app {
-  background-color: gray;
+  padding: 5px 10px 10px 10px;
+  background-color: black;
+  border-top: 4px solid rgb(150, 150, 150);
+  border-left: 4px solid rgb(150, 150, 150);
+  border-right: 4px solid rgb(100, 100, 100);
+  border-bottom: 4px solid rgb(100, 100, 100);
+  border-radius: 10px;
+  width: 270px;
+}
+
+#light-border {
+  border-top: 2px solid whitesmoke;
+  border-left: 2px solid whitesmoke;
+  border-right: 2px solid rgb(230, 230, 230);
+  border-bottom: 2px solid rgb(230, 230, 230);
+  border-radius: 7px;
+  margin: -5px -10px -10px -10px;
+}
+
+#inset-border {
+  border-top: 2px solid rgb(100, 100, 100);
+  border-left: 2px solid rgb(100, 100, 100);
+  border-right: 2px solid rgb(100, 100, 100);
+  border-bottom: 2px solid rgb(100, 100, 100);
+  border-radius: 5px;
+}
+
+#clear-nums {
+  display: grid;
+  gap: 10px;
 }
 
 #all-buttons {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr 0;
+  margin-left: 12px;
+  margin-bottom: 10px;
 }
+
+
+

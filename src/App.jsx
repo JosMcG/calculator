@@ -12,19 +12,23 @@ function App() {
 
   return (
     <div className="app">
-      <Display display={display}/>
-      <div id="all-buttons">
-        <div id="clear-nums">
-          <ClearButton setDisplay={setDisplay} display={display} 
-                      nums={nums} setNums={setNums}/>
-          <div id="nums-deci">
-            <NumButtons setDisplay={setDisplay} display={display} 
-                        nums={nums} setNums={setNums}/>
-          </div>
-        </div>
-        <div id="ops">
-          <OperatorButtons setDisplay={setDisplay} display={display}
+      <div id="light-border">
+        <div id="inset-border">
+          <Display display={display}/>
+          <div id="all-buttons">
+            <div id="clear-nums">
+              <ClearButton setDisplay={setDisplay} display={display} 
                           nums={nums} setNums={setNums}/>
+              <div>
+                <NumButtons id="nums-deci" setDisplay={setDisplay} display={display} 
+                            nums={nums} setNums={setNums}/>
+              </div>
+            </div>
+            <div>
+              <OperatorButtons setDisplay={setDisplay} display={display}
+                              nums={nums} setNums={setNums}/>
+            </div>
+          </div>
         </div>
       </div>
     </div>
