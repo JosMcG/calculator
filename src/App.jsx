@@ -7,7 +7,7 @@ import ClearButton from "./ClearButton"
 
 
 function App() {
-  const [display, setDisplay] = useState("");
+  const [display, setDisplay] = useState("0");
   const [nums, setNums] = useState("");
 
   return (

@@ -6,14 +6,21 @@ const Button = (props) => {
       let current = props.display;
       let thisEntry = props.obj.value;
       let numStr = props.nums;
-
-      if (/\d || ./.test(numStr) && !props.obj.action){
+      //don't allow multiple beginning zeros
+      if(current[0] == 0 && current[1] != "." && /\d/.test(thisEntry)){
+        props.setNums(thisEntry);
+        props.setDisplay(thisEntry);
+        return
+      //don't allow more than one decimal per number
+      } else if (/\d || ./.test(numStr) && !props.obj.action){
         if (thisEntry === "." && numStr.includes(".")) {
           return;
         }else {
           props.setNums(numStr + thisEntry);
           props.setDisplay(current + thisEntry);
         }
+      //if multiple operators are entered in a row, use the last operator
+      //allow negative numbers
       } else if (/[+-\/*]/.test(thisEntry)) {
           if (/[+-\/*]/.test(current.slice(-1)) && thisEntry !== "-") {
                 console.log("two operators " + current.slice(-1) + thisEntry);
@@ -30,7 +37,7 @@ const Button = (props) => {
       }
       if (thisEntry === "AC") {
         props.setNums("")
-        return props.setDisplay("")
+        return props.setDisplay("0")
       }
       if (thisEntry === "=") {
         try {
